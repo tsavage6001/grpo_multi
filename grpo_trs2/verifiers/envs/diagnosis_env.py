@@ -1,5 +1,5 @@
 from datasets import load_dataset
-from verifiers.reward_functions.diagnosis_match import reward_function
+from verifiers.rewards.reward_function import reward_function
 from verifiers.envs.environment import Environment
 
 class DiagnosisEnv(Environment):
