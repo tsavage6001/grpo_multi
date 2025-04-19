@@ -22,7 +22,7 @@ def query_gpt(prompt: str, retries: int = 3, delay: float = 1.0) -> str:
             time.sleep(delay)
     return ""
 
-def diagnosis_reward_func(prompts: List[List[Dict[str, str]]], completions: List[List[Dict[str, str]]], **kwargs) -> List[int]:
+def reward_function(prompts: List[List[Dict[str, str]]], completions: List[List[Dict[str, str]]], **kwargs) -> List[int]:
     """
     prompts: List of full conversations (list of message dicts)
     completions: List of completions to evaluate (one per conversation)
