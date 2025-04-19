@@ -8,7 +8,7 @@ from verifiers import RewardFunc
 from verifiers.envs.multiturn_env import MultiTurnEnv
 from verifiers.parsers import XMLParser
 from verifiers.prompts import DEFAULT_TOOL_PROMPT_TEMPLATE
-from verifiers.rubrics import ToolRubric
+#from verifiers.rubrics import ToolRubric
 
 def infer_schema_from_function(func: Callable) -> Dict[str, Any]:
     """Infers a tool schema from a function's signature and docstring."""
