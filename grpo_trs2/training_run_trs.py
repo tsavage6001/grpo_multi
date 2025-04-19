@@ -2,7 +2,7 @@ from transformers import AutoTokenizer
 from verifiers.envs.diagnosis_env import DiagnosisEnv
 from verifiers.inference.vllm_client import VLLMClient
 from trl import GRPOConfig
-from trainer.grpo_env_trainer import GRPOEnvTrainer
+from verifiers.trainers.grpo_env_trainer import GRPOEnvTrainer
 
 # Init tokenizer and environment
 tokenizer = AutoTokenizer.from_pretrained("TinyLlama/TinyLlama-1.1B-Chat-v0.1")
